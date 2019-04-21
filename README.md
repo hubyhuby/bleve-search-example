@@ -3,7 +3,7 @@
 <BR><BR>
 THIS IS A WORK IN PROGRESS<BR> Use at your own risks. No warranty of any kind. Might harm your kitten.
 <BR><BR>AIM: Have a simple <a href=https://github.com/blevesearch/bleve> Bleve search</a> set of example to jump start your app.
-<BR>USAGE: Go run main.go
+<BR>USAGE: Go run *.go
 <BR>Launch web browser at <a href=http://127.0.0.1:3000/> 127.0.0.1:3000 </a>
 <BR>Enjoy & code !
 <BR><BR> Term search: /search/brew  <BR> 
