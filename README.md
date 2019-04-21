@@ -1,7 +1,7 @@
 <HTML> <H1>BLEVE simple demo. Enjoy;)</H1>
 
 <BR><BR>
-THIS IS A WORK IN PROGRESS<BR> Use at your own risks. No warranty of any kind. Might arm your kitten.
+THIS IS A WORK IN PROGRESS<BR> Use at your own risks. No warranty of any kind. Might harm your kitten.
 <BR><BR>AIM: Have a simple <a href=https://github.com/blevesearch/bleve> Bleve search</a> set of example to jump start your app.
 <BR>USAGE: Go run main.go
 <BR>Launch web browser at <a href=http://127.0.0.1:3000/> 127.0.0.1:3000 </a>
