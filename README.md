@@ -1,4 +1,4 @@
-<HTML> <CENTER>BLEVE simple demo. Enjoy;)</CENTER>
+<HTML> <H1>BLEVE simple demo. Enjoy;)</H1>
 
 <BR><BR>
 THIS IS A WORK IN PROGRESS<BR> Use at your own risks. No warranty of any kind.
@@ -17,6 +17,7 @@ Help wanted to make the geaosearch work here :<BR>
 <p>
 <img src="https://tooap.com/wp-content/uploads/2017/12/tooap-agence-digitale-logo.png" alt="tooap" />
 
-<BR><BR> Brought to you by <a href=https://tooap.com/> Tooap</a> Digital Innovation  Agency. </HTML>
+<BR><BR> Brought to you by <a href=https://tooap.com/> Tooap</a> Digital Innovation  Agency. 
 
 </p>
+</HTML>
