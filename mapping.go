@@ -50,14 +50,13 @@ func buildIndexMapping() (mapping.IndexMapping, error) {
 	locationMapping.Index = true
 	locationMapping.Store = true
 	locationMapping.Type = "geopoint"
-	beerMapping.AddFieldMappingsAt("geo", locationMapping)
+	breweryMapping.AddFieldMappingsAt("geo", locationMapping)
 	// /Geo map
 
 	indexMapping := bleve.NewIndexMapping()
 	indexMapping.AddDocumentMapping("beer", beerMapping)
 	indexMapping.AddDocumentMapping("brewery", breweryMapping)
-
-	indexMapping.TypeField = "type"
+	indexMapping.TypeField = "type" // Type of the field is an important parameter. It select which *.Json will be mapped to which "NewDocumentMapping()" In this example you have Json with type = beer or type=brewery
 	indexMapping.DefaultAnalyzer = "en"
 
 	return indexMapping, nil
