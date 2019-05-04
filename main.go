@@ -34,7 +34,7 @@ var indexPath = flag.String("index", "beer-search.bleve", "index path")
 var cpuprofile = flag.String("cpuprofile", "", "write cpu profile to file")
 var memprofile = flag.String("memprofile", "", "write mem profile to file")
 
-const sayhi = "<HTML> <CENTER>BLEVE simple demo. Enjoy;)</CENTER><BR> Term search: <a href=./search/brew>/search/brew </a> <BR> TODO geosearch : <BR>Help wanted to make the geaosearch work here :/geosearch/ and /geosearch/beer <p><img src=https://tooap.com/wp-content/uploads/2017/12/tooap-agence-digitale-logo.png /><BR><BR> Brought to you by <a href=https://tooap.com/> Tooap</a> Digital Innovation  Agency. </HTML></p>"
+const sayhi = "<HTML> <CENTER>BLEVE simple demo. Enjoy;)</CENTER><BR> Term search: <a href=./search/brew>/search/brew </a> <BR>Geo Search box<a href=./geosearch/> /geosearch/ </a> <BR>Conjunction Geo<a href=./geosearch/brew> /geosearch/brew </a> <p><img src=https://tooap.com/wp-content/uploads/2017/12/tooap-agence-digitale-logo.png /><BR><BR> Brought to you by <a href=https://tooap.com/> Tooap</a> Digital Innovation  Agency. </HTML></p>"
 
 var beerIndex bleve.Index
 
@@ -52,6 +52,7 @@ func main() {
 	http.ListenAndServe(":3000", r)
 
 }
+//GO launchs by default the init function at the launch of your app
 func init() {
 
 	flag.Parse()
@@ -78,9 +79,9 @@ func init() {
 		}
 
 		// old index
-		beerIndex, err = bleve.New(*indexPath, indexMapping)
-		//Scorch index 10X smaller
-		//beerIndex, err = bleve.NewUsing(*indexPath, indexMapping, "scorch", "scorch", nil)
+	    //	beerIndex, err = bleve.New(*indexPath, indexMapping)
+		//Scorch New index (2019): 10X smaller index size
+		beerIndex, err = bleve.NewUsing(*indexPath, indexMapping, "scorch", "scorch", nil)
 
 		if err != nil {
 			log.Fatal(err)
