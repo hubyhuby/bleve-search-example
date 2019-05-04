@@ -10,9 +10,6 @@ THIS IS A WORK IN PROGRESS<BR> Use at your own risks. No warranty of any kind. M
 <BR> <BR> 
 <B>TODO geosearch : </B>
 <BR>
-Help wanted to make the geaosearch work here :<BR> 
-/geosearch/ 
-<BR> /geosearch/beer 
 <BR> <BR> 
 <p>
 <img src="https://tooap.com/wp-content/uploads/2017/12/tooap-agence-digitale-logo.png" alt="tooap" />
